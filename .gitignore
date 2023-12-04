@@ -70,3 +70,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Ignore Unity package cache
+/[Ll]ibrary/PackageCache/
+
+# Ignore specific large files causing the error
+/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-15.dylib
+/Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@2.0.5/data~/payload.tar.7z
+
+# Ignore all .dylib and .7z files (if you want to exclude all files of these types)
+*.dylib
+*.7z
